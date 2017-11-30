@@ -12,6 +12,7 @@ This is a cut down version of '[dev-setup](https://github.com/donnemartin/dev-se
 
 ## Development Tools
 * Sublime Text
+* Visual Studio Code
 * Virtual Box
 * Vagrant
 * MacDown

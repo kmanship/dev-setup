@@ -78,3 +78,17 @@ brew cleanup
 
 # Install Web tools
 npm install -g @angular/cli
+
+# Generating a new SSH key and adding it to the ssh-agent (for GitHub)
+# https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+eval "$(ssh-agent -s)"
+
+echo "Host *" >> ~/.ssh/config
+echo " AddKeysToAgent yes" >> ~/.ssh/config
+echo " UseKeychain yes" >> ~/.ssh/config
+echo " IdentityFile ~/.ssh/id_rsa" >> ~/.ssh/config
+
+ssh-add -K ~/.ssh/id_rsa

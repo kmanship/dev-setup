@@ -45,7 +45,9 @@ brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" visual-studio-code
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
+brew cask install --appdir="/Applications" docker
 brew cask install --appdir="/Applications" macdown
+brew cask install --appdir="/Applications" balsamiq-mockups
 #brew cask install --appdir="~/Applications" Caskroom/versions/intellij-idea-ce
 
 # Misc casks
@@ -57,8 +59,8 @@ brew cask install --appdir="/Applications" slack
 #brew cask install --appdir="/Applications" google-drive
 
 # Install Docker, which requires virtualbox
-brew install docker
-brew install boot2docker
+# brew install docker
+# brew install boot2docker
 
 # Install data stores
 brew install mysql
